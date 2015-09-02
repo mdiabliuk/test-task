@@ -1,0 +1,23 @@
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .header__logo_img{
+    background-image: url("../img/logo-retina.png");
+  }
+}
+
+@media only screen and (min-width: 1140px){
+  .category-block{
+    width: 22%;
+  }
+}
+
+@media only screen and (min-width: 1318px){
+  .category-block{
+    width: 18%;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .category-block{
+    width: 14.8%;
+  }
+}

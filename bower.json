@@ -1,0 +1,6 @@
+{
+  "name": "name",
+  "dependencies": {
+    "angular": "~1.4.5"
+  }
+}

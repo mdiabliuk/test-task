@@ -1,0 +1,22 @@
+$minWidth: 970px;
+$maxWidth: 1440px;
+$fullScreenWidth: 100%;
+
+// colors
+
+$header-bg: #87b448;
+$header-borderBottom: #71973c;
+$header-input-bg: #73993d;
+$header-input-focusColor: #1c2534;
+$white: #ffffff;
+$black: #000000;
+
+// mixin
+
+@mixin transition($sec){
+  -webkit-transition: all $sec;
+  -moz-transition: all $sec;
+  -ms-transition: all $sec;
+  -o-transition: all $sec;
+  transition: all $sec;
+}
