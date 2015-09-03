@@ -6,7 +6,6 @@
 .wrapper{
   width: $fullScreenWidth;
 }
-
 .trans{
   @include transition($delay-animation);
 }
@@ -287,10 +286,8 @@ header{
   font-size: 12px;
   color: #1c2534;
   font-weight: 400;
-  a{
-    &:hover{
-      color: #87b448;
-    }
+  &:hover{
+    color: #87b448;
   }
 }
 .content__footer{

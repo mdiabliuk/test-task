@@ -302,7 +302,7 @@ header {
   font-size: 12px;
   color: #1c2534;
   font-weight: 400; }
-  .company-info__link a:hover {
+  .company-info__link:hover {
     color: #87b448; }
 
 .content__footer {
