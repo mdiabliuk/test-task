@@ -6,6 +6,10 @@
 .wrapper{
   width: $fullScreenWidth;
 }
+
+.trans{
+  @include transition($delay-animation);
+}
 .container{
   width: $fullScreenWidth;
   max-width: $maxWidth;
@@ -40,7 +44,7 @@ header{
 }
 .header__logo_img{
   background: url("../img/Services.svg") 0 0;
-  width: 130px;
+  width: $fullScreenWidth;
   height: 40px;
 }
 .header__search{
@@ -125,42 +129,42 @@ header{
   max-width: 240px;
   display: table-cell;
   padding-left: 25px;
+}
+.header__user-block__name{
+  font: 400 16px/42px 'ProximaNova-Regular';
+  color:  #fefefe;
+  text-align: left;
+  position: relative;
+  padding-left: 40px;
+  margin-top: 10px;
+  display: block;
+  span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   &:hover{
-    .header__user-block__name{
-      color: #587b39;
-    }
+    color: #587b39;
     img{
       border-radius: 50%;
     }
   }
 }
-.header__user-block__name{
-  font-family: 'ProximaNova-Regular', serif;
-  color:  #fefefe;
-  font-size: 16px;/* Приближение из-за подстановки шрифтов */
-  font-weight: 400;
-  line-height: 42px;/* Приближение из-за подстановки шрифтов */
-  text-align: left;
-  position: relative;
-  padding-left: 40px;
-  margin-top: 10px;
-  span{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    @include transition(0.5s);
-  }
-  .user-avatar{
-    position: absolute;
-    top: 5px;
-    left: 0;
-    @include transition(0.5s);
-  }
+.user-avatar{
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 32px;
+  height: 32px;
 }
 
 // --------------CONTENT------------------
 .content{
   width: $fullScreenWidth;
   background: $white;
+}
+
+.row{
+  display: block;
 }
 //------Left block-------
 
@@ -185,7 +189,6 @@ header{
   display: block;
   font: 16px/49px 'ProximaNova-Regular';
   color: #59606B;
-  @include transition(0.5s);
   &:before{
     content: " ";
     display: block;
@@ -194,15 +197,10 @@ header{
     left: 0;
     width: 28px;
     height: 28px;
-    background: url("../img/Services.png") no-repeat 0 0;
+    background: url("../img/Services.png") no-repeat 0 -70px;
   }
   &:hover{
     color: #87b448;
-  }
-}
-.item-1{
-  &:before{
-    background-position: 0 -70px;
   }
 }
 .item-2{
@@ -252,8 +250,8 @@ header{
 }
 .content__featured-companies__seeAll{
   float: right;
-  a{
-    color: $black !important;
+  &:hover{
+    color: #87b448;
   }
 }
 .content__featured-companies__block{
@@ -266,10 +264,9 @@ header{
     width: 80px;
     height: 80px;
     border-radius: 5px;
-    @include transition(0.5s);
-    &:hover{
-      border-radius: 50%;
-    }
+  }
+  &:hover{
+    border-radius: 50%;
   }
 }
 .company-info{
@@ -283,17 +280,15 @@ header{
   color: #1c2534;
   text-align: left;
   &:hover{
-    a{
-      color: #87b448;
-    }
+    color: #87b448;
   }
 }
 .company-info__link{
   font-size: 12px;
   color: #1c2534;
   font-weight: 400;
-  &:hover{
-    a{
+  a{
+    &:hover{
       color: #87b448;
     }
   }
@@ -324,7 +319,6 @@ header{
   width: 212px;
 }
 .user-name{
-  display: block;
   margin-bottom: 5px;
 }
 
@@ -352,7 +346,6 @@ header{
   border-radius: 5px;
   background: #87b448;
   cursor: pointer;
-  @include transition(0.3s);
   &:hover{
     background: #97cf55;
     box-shadow: 0 2px 5px #aee857;
@@ -365,7 +358,13 @@ header{
   overflow: hidden;
   text-align: center;
   list-style: none;
-  &:after {content:""; display:inline-block; width:100%; height:0; overflow:hidden;}
+  &:after {
+    content:"";
+    display:inline-block;
+    width:100%;
+    height:0;
+    overflow:hidden;
+  }
 }
 
 .category-block{
@@ -375,7 +374,6 @@ header{
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  float: left;
   a{
     &:hover{
       .category-block__icon{

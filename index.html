@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf8" />
     <title>Denteez</title>
     <!-- bower:css -->
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/bundle.min.css"/>
     <!-- endbower -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bower:js -->
@@ -14,7 +14,6 @@
 </head>
 <body>
     <div class="wrapper">
-
         <!-- HEADER -->
         <header class="clearfix">
             <div class="container">
@@ -34,11 +33,10 @@
                     </div>
                 </div>
                 <div class="header__user-block rightside">
-                    <div class="header__user-block__name"><img src="img/Image.png" alt="user-avatar" class="user-avatar"/><span>Myroslav Diabliuk</span></div>
+                    <div class="header__user-block__name trans"><img src="img/Image.png" alt="user-avatar" class="user-avatar trans"/><span>Myroslav Diabliuk</span></div>
                 </div>
             </div>
         </header>
-
         <!-- CONTENT -->
         <section class="content clearfix">
             <div class="container">
@@ -46,57 +44,55 @@
                 <div class="left-block clearfix">
                     <nav class="content__navigation">
                         <ul class="content__navigation__list">
-                            <li class="content__navigation__list__item"><a href="#"><span class="item item-1">Feed</span></a></li>
-                            <li class="content__navigation__list__item"><a href="#"><span class="item item-2">Ask a Colleague</span></a></li>
-                            <li class="content__navigation__list__item"><a href="#"><span class="item item-3">Companies</span></a></li>
-                            <li class="content__navigation__list__item"><a href="#"><span class="item item-4">Service Directory</span></a></li>
+                            <li class="content__navigation__list__item"><a href="#" class="item item-1 trans">Feed</a></li>
+                            <li class="content__navigation__list__item"><a href="#" class="item item-2 trans">Ask a Colleague</a></li>
+                            <li class="content__navigation__list__item"><a href="#" class="item item-3 trans">Companies</a></li>
+                            <li class="content__navigation__list__item"><a href="#" class="item item-4 trans">Service Directory</a></li>
                         </ul>
                     </nav>
                     <div class="content__advertisement">
-                        <span class="content__advertisement__title grey-txt">Advertisement</span>
-                        <div class="content__advertisement__img"><a href="#"><img src="img/adv-img.png" alt="adv-img"/></a></div>
-                        <a href="#" class="content__advertisement__link"><span>Ads by denteez.com</span></a>
+                        <div class="row clearfix">
+                            <span class="content__advertisement__title grey-txt">Advertisement</span>
+                        </div>
+                        <a href="#" class="content__advertisement__img"><img src="img/adv-img.png" alt="adv-img"/></a>
+                        <a href="#" class="content__advertisement__link trans">Ads by denteez.com</a>
                     </div>
                     <div class="content__featured-companies">
-                        <span class="content__featured-companies__title grey-txt">Featured Companies</span>
-                        <span class="content__featured-companies__seeAll grey-txt"><a href="#">See All</a></span>
+                        <div class="row clearfix">
+                            <span class="content__featured-companies__title grey-txt">Featured Companies</span>
+                            <a href="#" class="content__featured-companies__seeAll grey-txt trans">See All</a>
+                        </div>
                         <div class="content__featured-companies__block">
-                            <div class="company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
-                            </div>
+                            <a href="#" class="company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
                             <div class="company-info clearfix">
                                 <span class="company-info__name"><a href="#">Company name</a></span>
                                 <span class="company-info__activity grey-txt">Manufacturer</span>
                                 <span class="company-info__location grey-txt">New York, USA</span>
-                                <span class="company-info__link grey-txt"><a href="#">Follow Now</a></span>
+                                <span class="company-info__link grey-txt trans"><a href="#">Follow Now</a></span>
                             </div>
                         </div>
                         <div class="content__featured-companies__block">
-                            <div class="company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
-                            </div>
+                            <a href="#" class="company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
                             <div class="company-info clearfix">
                                 <span class="company-info__name"><a href="#">Company name</a></span>
                                 <span class="company-info__activity grey-txt">Manufacturer</span>
                                 <span class="company-info__location grey-txt">New York, USA</span>
-                                <span class="company-info__link grey-txt"><a href="#">Follow Now</a></span>
+                                <span class="company-info__link grey-txt trans"><a href="#">Follow Now</a></span>
                             </div>
                         </div>
                         <div class="content__featured-companies__block">
-                            <div class="company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
-                            </div>
+                            <a href="#" class="company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
                             <div class="company-info clearfix">
                                 <span class="company-info__name"><a href="#">Company name</a></span>
                                 <span class="company-info__activity grey-txt">Manufacturer</span>
                                 <span class="company-info__location grey-txt">New York, USA</span>
-                                <span class="company-info__link grey-txt"><a href="#">Follow Now</a></span>
+                                <span class="company-info__link grey-txt trans"><a href="#">Follow Now</a></span>
                             </div>
                         </div>
                     </div>
@@ -110,84 +106,86 @@
                 <div class="right-block clearfix">
                     <!-- USERS LIST -->
                     <div class="content__users content__featured-companies">
-                        <span class="content__users__title content__featured-companies__title grey-txt">People you may know</span>
-                        <span class="content__users__seeAll content__featured-companies__seeAll grey-txt"><a href="#">See All</a></span>
+                        <div class="row clearfix">
+                            <span class="content__users__title content__featured-companies__title grey-txt">People you may know</span>
+                            <a href="#" class="content__users__seeAll content__featured-companies__seeAll grey-txt trans">See All</a>
+                        </div>
                         <div class="content__users__block content__featured-companies__block">
-                            <span class="user-name company-info__name"><a href="#">Dennis Adams</a></span>
-                            <div class="user-img company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
+                            <div class="user-name row clearfix">
+                                <a href="#" class="user-name company-info__name trans">Dennis Adams</a>
                             </div>
+                            <a href="#" class="user-img company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
                             <div class="user-info company-info clearfix">
                                 <span class="user-info__position company-info__activity grey-txt">Dentist (Practice Owner)</span>
                                 <span class="user-info__location company-info__location grey-txt">London, England</span>
-                                <span class="user-info__addFriend company-info__link grey-txt"><a href="#">Add Friend</a></span>
+                                <span class="user-info__addFriend company-info__link grey-txt trans"><a href="#">Add Friend</a></span>
                             </div>
                         </div>
                         <div class="content__users__block content__featured-companies__block">
-                            <span class="user-name company-info__name"><a href="#">Dennis Adams</a></span>
-                            <div class="user-img company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
+                            <div class="user-name row clearfix">
+                                <a href="#" class="user-name company-info__name trans">Dennis Adams</a>
                             </div>
+                            <a href="#" class="user-img company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
                             <div class="user-info company-info clearfix">
                                 <span class="user-info__position company-info__activity grey-txt">Dentist (Practice Owner)</span>
                                 <span class="user-info__location company-info__location grey-txt">London, England</span>
-                                <span class="user-info__addFriend company-info__link grey-txt"><a href="#">Add Friend</a></span>
+                                <span class="user-info__addFriend company-info__link grey-txt trans"><a href="#">Add Friend</a></span>
                             </div>
                         </div>
                         <div class="content__users__block content__featured-companies__block">
-                            <span class="user-name company-info__name"><a href="#">Dennis Adams</a></span>
-                            <div class="user-img company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
+                            <div class="user-name row clearfix">
+                                <a href="#" class="company-info__name trans">Dennis Adams</a>
                             </div>
+                            <a href="#" class="user-img company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
                             <div class="user-info company-info clearfix">
                                 <span class="user-info__position company-info__activity grey-txt">Dentist (Practice Owner)</span>
                                 <span class="user-info__location company-info__location grey-txt">London, England</span>
-                                <span class="user-info__addFriend company-info__link grey-txt"><a href="#">Add Friend</a></span>
+                                <span class="user-info__addFriend company-info__link grey-txt trans"><a href="#">Add Friend</a></span>
                             </div>
                         </div>
                     </div>
 
                     <!-- PRODUCTS LIST -->
                     <div class="content__featured-products content__featured-companies">
-                        <span class="content__featured-products__title content__featured-companies__title grey-txt">Featured Companies</span>
-                        <span class="content__featured-products__seeAll content__featured-companies__seeAll grey-txt"><a href="#">See All</a></span>
-                        <div class="content__featured-products__block content__featured-companies__block">
-                            <span class="product-name company-info__name user-name"><a href="#">Company name</a></span>
-                            <div class="product-img company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
-                            </div>
-                            <div class="product-info company-info clearfix">
+                        <div class="row clearfix">
+                            <span class="content__featured-products__title content__featured-companies__title grey-txt">Featured Companies</span>
+                            <a href="#" class="content__featured-products__seeAll content__featured-companies__seeAll grey-txt trans">See All</a>
+                        </div>
+                        <div class="content__featured-companies__block">
+                            <a href="#" class="company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
+                            <div class="company-info clearfix">
+                                <span class="company-info__name"><a href="#">Company name</a></span>
                                 <span class="company-info__activity grey-txt">Manufacturer</span>
                                 <span class="company-info__location grey-txt">New York, USA</span>
-                                <span class="company-info__link grey-txt"><a href="#">Follow Now</a></span>
+                                <span class="company-info__link grey-txt trans"><a href="#">Follow Now</a></span>
                             </div>
                         </div>
-                        <div class="content__featured-products__block content__featured-companies__block">
-                            <span class="product-name company-info__name user-name"><a href="#">Company name</a></span>
-                            <div class="product-img company-img">
-                                <a href="#">
-                                    <img src="img/company-img.png" alt="comp-img"/>
-                                </a>
-                            </div>
-                            <div class="product-info company-info clearfix">
+                        <div class="content__featured-companies__block">
+                            <a href="#" class="company-img trans">
+                                <img src="img/company-img.png" alt="comp-img"/>
+                            </a>
+                            <div class="company-info clearfix">
+                                <span class="company-info__name"><a href="#">Company name</a></span>
                                 <span class="company-info__activity grey-txt">Manufacturer</span>
                                 <span class="company-info__location grey-txt">New York, USA</span>
-                                <span class="company-info__link grey-txt"><a href="#">Follow Now</a></span>
+                                <span class="company-info__link grey-txt trans"><a href="#">Follow Now</a></span>
                             </div>
                         </div>
                     </div>
                     <div class="content__advertisement">
-                        <span class="content__advertisement__title grey-txt">Advertisement</span>
-                        <div class="content__advertisement__img"><a href="#"><img src="img/adv-img.png" alt="adv-img"/></a></div>
-                        <a href="#" class="content__advertisement__link"><span>Ads by denteez.com</span></a>
+                        <div class="row clearfix">
+                            <span class="content__advertisement__title grey-txt">Advertisement</span>
+                        </div>
+                        <a href="#" class="content__advertisement__img"><img src="img/adv-img.png" alt="adv-img"/></a>
+                        <a href="#" class="content__advertisement__link trans">Ads by denteez.com</a>
                     </div>
                 </div>
 
@@ -195,13 +193,13 @@
                 <div class="center-block clearfix">
                     <div class="center-block__header clearfix">
                         <h1 class="center-block__header__title">Service Directory</h1>
-                        <span class="center-block__header__btn">Add New Service</span>
+                        <span class="center-block__header__btn trans">Add New Service</span>
                     </div>
                     <ul class="categories clearfix" ng-controller="CategoryCtrl">
                         <li class="category-block clearfix" ng-repeat="category in categories">
-                            <a href="#">
-                                <div class="category-block__icon"><img src="{{category.icon}}" alt="icon"/></div>
-                                <span class="category-block__title">{{category.title}}</span>
+                            <a href="#" class="">
+                                <div class="category-block__icon trans"><img src="{{category.icon}}" alt="icon"/></div>
+                                <span class="category-block__title trans">{{category.title}}</span>
                             </a>
                         </li>
                     </ul>

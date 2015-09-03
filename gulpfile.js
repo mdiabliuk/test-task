@@ -13,10 +13,10 @@ var notify = require('gulp-notify');
 // CSS
 gulp.task('css', function(){
     return gulp.src('css/*.css')
-        .pipe(uncss({html: ['index.html']}))
-        .pipe(autoprefixer('last 15 versions'))
-        .pipe(minifyCss('style.css'))
-        .pipe(rename('style.min.css'))
+        //.pipe(uncss({html: ['index.html']}))
+        //.pipe(autoprefixer('last 15 versions'))
+        .pipe(minifyCss('bundle.css'))
+        .pipe(rename('bundle.min.css'))
         .pipe(gulp.dest('css/'))
         .pipe(notify('Done'));
 });
@@ -24,7 +24,7 @@ gulp.task('css', function(){
 gulp.task('watch', function(){
     gulp.watch('css/*.css', ['css'] )
 });
-
+/*
 // CLEAN
 gulp.task('clean', function () {
     return gulp.src('app', {read: false})
@@ -57,4 +57,4 @@ gulp.task('bower', function(){
 gulp.task('watch', function(){
     gulp.watch('bower.json', ['bower']);
 });
-
+*/

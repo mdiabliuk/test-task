@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'ProximaNova-Regular';
   src: url("../fonts/proximanova-regular.eot"), url("../fonts/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular.ttf") format("truetype"), url("../fonts/proximanova-regular.svg") format("svg"), url("../fonts/proximanova-regular.woff") format("woff"), url("../fonts/proximanova-regular.woff2") format("woff2"); }
@@ -52,6 +51,13 @@ img {
 .wrapper {
   width: 100%; }
 
+.trans {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -86,7 +92,7 @@ header {
 
 .header__logo_img {
   background: url("../img/Services.svg") 0 0;
-  width: 130px;
+  width: 100%;
   height: 40px; }
 
 .header__search {
@@ -162,44 +168,36 @@ header {
   max-width: 240px;
   display: table-cell;
   padding-left: 25px; }
-  .header__user-block:hover .header__user-block__name {
-    color: #587b39; }
-  .header__user-block:hover img {
-    border-radius: 50%; }
 
 .header__user-block__name {
-  font-family: 'ProximaNova-Regular', serif;
+  font: 400 16px/42px 'ProximaNova-Regular';
   color: #fefefe;
-  font-size: 16px;
-  /* ╧Ёшсышцхэшх шч-чр яюфёЄрэютъш °ЁшЇЄют */
-  font-weight: 400;
-  line-height: 42px;
-  /* ╧Ёшсышцхэшх шч-чр яюфёЄрэютъш °ЁшЇЄют */
   text-align: left;
   position: relative;
   padding-left: 40px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  display: block; }
   .header__user-block__name span {
     white-space: nowrap;
-    text-overflow: ellipsis;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
-  .header__user-block__name .user-avatar {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
+    text-overflow: ellipsis; }
+  .header__user-block__name:hover {
+    color: #587b39; }
+    .header__user-block__name:hover img {
+      border-radius: 50%; }
+
+.user-avatar {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 32px;
+  height: 32px; }
 
 .content {
   width: 100%;
   background: #ffffff; }
+
+.row {
+  display: block; }
 
 .left-block {
   float: left;
@@ -221,12 +219,7 @@ header {
   padding-left: 50px;
   display: block;
   font: 16px/49px 'ProximaNova-Regular';
-  color: #59606B;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
+  color: #59606B; }
   .item:before {
     content: " ";
     display: block;
@@ -235,12 +228,9 @@ header {
     left: 0;
     width: 28px;
     height: 28px;
-    background: url("../img/Services.png") no-repeat 0 0; }
+    background: url("../img/Services.png") no-repeat 0 -70px; }
   .item:hover {
     color: #87b448; }
-
-.item-1:before {
-  background-position: 0 -70px; }
 
 .item-2:before {
   background-position: 0 -120px; }
@@ -280,8 +270,8 @@ header {
 
 .content__featured-companies__seeAll {
   float: right; }
-  .content__featured-companies__seeAll a {
-    color: #000000 !important; }
+  .content__featured-companies__seeAll:hover {
+    color: #87b448; }
 
 .content__featured-companies__block {
   display: block;
@@ -292,14 +282,9 @@ header {
   .company-img img {
     width: 80px;
     height: 80px;
-    border-radius: 5px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
-    .company-img img:hover {
-      border-radius: 50%; }
+    border-radius: 5px; }
+  .company-img:hover {
+    border-radius: 50%; }
 
 .company-info {
   padding-left: 90px; }
@@ -310,14 +295,14 @@ header {
   font: 400 16px/20px 'ProximaNova-Regular';
   color: #1c2534;
   text-align: left; }
-  .company-info__name:hover a {
+  .company-info__name:hover {
     color: #87b448; }
 
 .company-info__link {
   font-size: 12px;
   color: #1c2534;
   font-weight: 400; }
-  .company-info__link:hover a {
+  .company-info__link a:hover {
     color: #87b448; }
 
 .content__footer {
@@ -339,7 +324,6 @@ header {
   width: 212px; }
 
 .user-name {
-  display: block;
   margin-bottom: 5px; }
 
 .center-block {
@@ -363,12 +347,7 @@ header {
   color: #ffffff;
   border-radius: 5px;
   background: #87b448;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  cursor: pointer; }
   .center-block__header__btn:hover {
     background: #97cf55;
     box-shadow: 0 2px 5px #aee857; }
@@ -393,8 +372,7 @@ header {
   height: 200px;
   text-align: center;
   display: inline-block;
-  vertical-align: top;
-  float: left; }
+  vertical-align: top; }
   .category-block a:hover .category-block__icon {
     background: #f3f3f3; }
   .category-block a:hover .category-block__title {
